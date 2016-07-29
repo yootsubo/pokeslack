@@ -20,7 +20,7 @@
 20,Raticate,2
 21,Spearow,1
 22,Fearow,2
-23,Ekans,2
+23,Ekans,3
 24,Arbok,3
 25,Pikachu,3
 26,Raichu,4
@@ -55,7 +55,7 @@
 55,Golduck,3
 56,Mankey,2
 57,Primeape,3
-58,Growlithe,2
+58,Growlithe,3
 59,Arcanine,4
 60,Poliwag,1
 61,Poliwhirl,2
@@ -78,11 +78,11 @@
 78,Rapidash,3
 79,Slowpoke,2
 80,Slowbro,3
-81,Magnemite,3
+81,Magnemite,2
 82,Magneton,4
 83,Farfetch'd,4
 84,Doduo,1
-85,Dodrio,2
+85,Dodrio,3
 86,Seel,1
 87,Dewgong,2
 88,Grimer,2
@@ -108,7 +108,7 @@
 108,Lickitung,3
 109,Koffing,2
 110,Weezing,3
-111,Rhyhorn,3
+111,Rhyhorn,2
 112,Rhydon,4
 113,Chansey,4
 114,Tangela,2
@@ -144,7 +144,7 @@
 144,Articuno,5
 145,Zapdos,5
 146,Moltres,5
-147,Dratini,2
+147,Dratini,3
 148,Dragonair,3
 149,Dragonite,4
 150,Mewtwo,5
