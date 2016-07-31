@@ -38,6 +38,7 @@ class Pokeslack:
             return
 
         from_lure = ', from a lure' if pokemon.from_lure else ''
+        source = '[Lure]' if pokemon.from_lure else '[Spawn]'
         miles_away = pokemon.get_distance_str()
 
         position = Pokeconfig.get().position
@@ -46,7 +47,7 @@ class Pokeslack:
         map_url = 'http://maps.google.com?saddr=%s,%s&daddr=%s,%s&directionsmode=walking' % (position[0], position[1], pokemon.position[0], pokemon.position[1])
         time_remaining = pokemon.expires_in_str()
         stars = ''.join([':star:' for x in xrange(pokemon.rarity)])
-        message = 'I found a <%s|%s> %s <%s|%s away> expiring in %s%s' % (pokedex_url, pokemon.name, stars, map_url, miles_away, time_remaining, from_lure)
+        message = '%s <%s|%s> %s <%s|%s away> expiring in %s%s' % (source, pokedex_url, pokemon.name, stars, map_url, miles_away, time_remaining, from_lure)
         # bold message if rarity > 4
         if pokemon.rarity >= 4:
             message = '*%s*' % message
